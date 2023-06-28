@@ -11,7 +11,7 @@ public class AIchat {
 
         con.setRequestMethod("POST");
         con.setRequestProperty("Content-Type", "application/json");
-        con.setRequestProperty("Authorization", "Bearer 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");
+        con.setRequestProperty("Authorization", "Bearer " + System.getenv("OPENAI_API_KEY"));
 
         JSONObject data = new JSONObject();
         data.put("model", "text-davinci-003");
@@ -27,6 +27,4 @@ public class AIchat {
 
         return new JSONObject(output).getJSONArray("choices").getJSONObject(0).getString("text");
     }
-
-    
 }
