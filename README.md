@@ -1,5 +1,4 @@
 # Custom-Mailer
-Upcoming: plan on implementing Gmail API instead of JavaMail API
 
 Uses Java Swing to prompt the user for email and password
 Once the user is authenticated it will switch to the second panel
